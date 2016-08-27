@@ -1,0 +1,27 @@
+
+
+<input type="button" value="INSERT" ng-click="insert_func()"/>
+<pre>
+  {{ insert }}
+</pre>
+
+<input type="button" value="SELECT" ng-click="select_func()"/>
+<pre>
+  {{ select }}
+</pre>
+
+<input type="text" id="updateid"
+  ng-model="$parent.updateid" />
+<input type="button" value="UPDATE"
+  ng-click="update_func()"/>
+<pre>
+  {{ update }}
+</pre>
+
+<input type="text" id="deleteid"
+  ng-model="$parent.deleteid"/>
+<input type="button" value="DELETE"
+  ng-click="delete_func()"/>
+<pre>
+  {{ delete }}
+</pre>

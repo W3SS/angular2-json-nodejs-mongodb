@@ -1,0 +1,54 @@
+
+
+<h1> {{ Mongoose }}</h1>
+
+<div class="container">
+
+    <div class="row">
+          <h3>Find</h3>
+          <form action="/crud/find" method="post" >
+            <input type="submit" name="find" value="find">
+          </form>
+          <div>
+          {{#each items}}
+           <p>
+             id: <span>{{id}} </span>
+             author: <span>{{author}} </span>
+             title: <span>{{title}} </span>
+             body: <span>{{body}} </span>
+             date: <span>{{date}} </span>
+           </p>
+          {{/each}}
+          </div>
+    </div>
+
+    <div class="row">
+      <h3>Save</h3>
+      <form action="/crud/save" method="post" >
+        <input type="text" name="author" value="author" />
+        <input type="text" name="title" value="title" />
+        <input type="body" name="body" value="body" />
+        <input type="submit" name="save" value="save">
+      </form>
+    </div>
+
+    <div class="row">
+      <h3>Update</h3>
+      <form action="/crud/update" method="post" >
+        <input type="text" name="id" value="" />
+        <input type="text" name="author" value="author" />
+        <input type="text" name="title" value="title" />
+        <input type="body" name="body" value="body" />
+        <input type="submit" name="save" value="save">
+      </form>
+    </div>
+
+    <div class="row">
+      <h3>Delete</h3>
+      <form action="/crud/remove" method="post" >
+        <input type="text" name="id" value="" />
+        <input type="submit" name="save" value="save">
+      </form>
+    </div>
+
+</div>
